@@ -2,3 +2,12 @@
 	ex:- arr = [1,2,5,2,5,1,6,7,7]
 
 		output:- [1,2,5,6,7]*/
+
+
+
+
+
+function duplicate(arr) {
+    var ans = arr.filter((e,i)=>arr.indexOf(e) === i);
+    return ans;
+};
