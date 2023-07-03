@@ -3,3 +3,26 @@
 //E.g num = 2914
 //O/p Even Place (9+4)
 //Odd Place 2+1
+
+
+function sum(){
+    var n=2914
+    var  i=0;
+    var odd=0;
+    var even=0;
+    while (n!=0) {
+       // console.log("Number not varry");
+        if(i%2==0){
+            var a=n%10;
+            even=even+a;
+        }
+        else{
+            var b=n%10;
+            odd=odd+b;
+        }
+        n=parseInt(n/10);
+        i++;
+    }
+    console.log("EVEN DIGIT SUM:  " +even);
+    console.log("ODD DIGIT SUM:  "+odd);
+}
