@@ -4,3 +4,21 @@ Use Callback function, create a method to check if the triangle is Equilateral o
 
 Output:
 "true" if the triangle is equilateral and "false" if its not.*/
+
+
+
+
+
+function Triangle(a, b, c) {
+  var isEquilateral = (a === b && b === c);
+  return () => {
+    return isEquilateral;
+  };
+}
+var isEquilateralTriangle = Triangle(3, 3, 3)();
+console.log(isEquilateralTriangle); 
+
+var isEquilateralTriangl = Triangle(2, 3, 4)();
+console.log(isEquilateralTriangl); 
+VM1624:8 true
+VM1624:11 false
